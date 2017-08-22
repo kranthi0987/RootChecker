@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sanjay.rootverifier"
     android:installLocation="auto"
-    android:versionCode="12"
-    android:versionName="2.0">
+    android:versionCode="13"
+    android:versionName="2.1">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--<uses-permission android:name="android.permission.BLUETOOTH" />-->
 
     <application
         android:allowBackup="true"
@@ -33,19 +33,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <activity
-                android:name="com.startapp.android.publish.ads.list3d.List3DActivity"
-                android:theme="@android:style/Theme" />
-
-            <activity
-                android:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:theme="@android:style/Theme.Translucent" />
-
-            <activity
-                android:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:theme="@android:style/Theme" />
         </activity>
 
         <service android:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService" />
