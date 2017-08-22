@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.abcdjdj.rootverifier"
-        minSdkVersion 8
+        applicationId "com.sanjay.rootverifier"
+        minSdkVersion 9
         targetSdkVersion 23
     }
 
@@ -19,5 +19,17 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:21.0.+'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.startapp:inapp-sdk:3.6.2'
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Root Verifier</string>
+    <string name="app_name">Root Checker</string>
     
     <string name="Status">ROOT STATUS : NOT YET CHECKED</string>
     <string name="rooted">DEVICE IS ROOTED</string>
@@ -26,5 +26,7 @@
     <string name="dev_name">DEVICE :</string>
     <string name="exit">Exit</string>
     <string name="Check">Check</string>
-  
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
 </resources>

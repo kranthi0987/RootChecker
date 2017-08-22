@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="right" type="id">right</item>
+    <item name="wrong" type="id">wrong</item>
+</resources>

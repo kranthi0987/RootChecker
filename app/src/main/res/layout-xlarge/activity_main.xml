@@ -1,39 +1,43 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true" >
+    android:layout_height="fill_parent">
 
-    <LinearLayout
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
         android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
         tools:context=".MainActivity" >
 
         <android.support.v7.widget.Toolbar
-            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:background="@color/colorPrimary"
-            android:id="@+id/toolbar" />
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
 
         <TextView
             android:id="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Welcome"
-            android:textSize="60sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70sp" />
+            android:layout_marginTop="70sp"
+            android:text="@string/Welcome"
+            android:textSize="60sp" />
 
         <TextView
             android:id="@+id/instructions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60sp"
-            android:layout_marginRight="4sp"
             android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_marginTop="60sp"
             android:gravity="center"
             android:text="@string/Description"
             android:textSize="40sp" />
@@ -41,22 +45,22 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="Check"
-            android:text="@string/Check"
-            android:layout_marginTop="60sp"
-            android:padding="25sp"
-            android:textSize="40sp"
             android:layout_gravity="center_horizontal"
-            android:gravity="center"/>
+            android:layout_marginTop="60sp"
+            android:gravity="center"
+            android:onClick="Check"
+            android:padding="25sp"
+            android:text="@string/Check"
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="65sp"
-            android:layout_marginRight="4sp"
-            android:layout_marginLeft="4sp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_marginTop="65sp"
             android:gravity="center"
             android:text="@string/Status"
             android:textSize="40sp" />
@@ -65,11 +69,11 @@
             android:id="@+id/busybox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="65sp"
-            android:layout_marginRight="4sp"
-            android:layout_marginLeft="4sp"
-            android:gravity="center"
             android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_marginTop="65sp"
+            android:gravity="center"
             android:text="@string/busybox_default"
             android:textSize="40sp" />
 
@@ -78,9 +82,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="65sp"
-            android:layout_marginRight="4sp"
             android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_marginTop="65sp"
             android:gravity="center"
             android:text="@string/su_app_default"
             android:textSize="40sp" />
@@ -89,13 +93,21 @@
             android:id="@+id/devicemodel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="65sp"
-            android:layout_marginRight="4sp"
-            android:layout_marginLeft="4sp"
-            android:gravity="center"
             android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_marginTop="65sp"
+            android:gravity="center"
             android:text="@string/dev_name"
             android:textSize="40sp" />
 
     </LinearLayout>
 </ScrollView>
+
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
